@@ -29,6 +29,7 @@ public class Game {
                 } else {
                     DisplayEndGameMessage();
                     attempts = 0;
+                    givenNumer = 0;
                     if (exitGame()) {
                         System.exit(0);
                     }
