@@ -8,6 +8,10 @@ public class Main {
         int N = 0;
         try {
             N = Integer.parseInt(args[0]);
+            if(N<=0){
+              System.out.println("Arg must be greter than 0! ");
+              System.exit(-1);
+              }
             Game game = new Game(N);
             game.startGame();
 
